@@ -1,10 +1,53 @@
-nav {
-  background: lightblue;
+.nav-center {
+  position: fixed;
+  background: rgb(231, 247, 252);
   display: flex;
   align-items: center;
   width: 100%;
+  padding: 5px 20px;
 }
 
-button {
-  border-radius: 5px;
+.nav-links {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
 }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(52, 56, 58);
+}
+
+li a:hover {
+  color: rgb(247, 8, 8);
+  text-decoration: none;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  margin-right: -50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*mover o elemento 50% de sua largura para a esquerda*/
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  color: rgb(231, 247, 252);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+
