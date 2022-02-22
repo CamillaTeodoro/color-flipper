@@ -1,15 +1,18 @@
 .nav-center {
-  position: fixed;
-  background: rgb(231, 247, 252);
+  margin: 0;
   display: flex;
+  justify-content: space-between;
+  background: rgb(231, 247, 252);
   align-items: center;
-  width: 100%;
-  padding: 5px 20px;
 }
 
 .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   list-style-type: none;
   margin: 10px;
+  margin-right: 40px;
   padding: 0;
 }
 
@@ -21,33 +24,30 @@ li a {
   display: block;
   padding: 12px;
   text-decoration: none;
-  color: rgb(52, 56, 58);
+  color: rgb(35, 38, 39);
+  font-size: 18px;
 }
 
 li a:hover {
-  color: rgb(247, 8, 8);
+  color: rgb(247, 8, 139);
   text-decoration: none;
 }
 
 .container {
-  position: absolute;
-  top: 30%;
-  margin-right: -50%;
-  left: 50%;
-  transform: translate(
-    -50%,
-    -50%
-  ); /*mover o elemento 50% de sua largura para a esquerda*/
-  width: fit-content;
-  height: fit-content;
-  background-color: black;
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(29, 29, 29);
   color: rgb(231, 247, 252);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
-h2 {
+h1 {
   text-align: center;
+  margin-left: 40px;
 }
-
-
